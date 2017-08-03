@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Tetris</title>
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+        
+    </head>
+    <style>
+        
+        body {
+            background-color: #1E2121;            
+            margin-top: 10px;
+            overflow: hidden;
+            
+        }
+        #tetris {
+            display: block;
+            height: 384;
+            margin: 10px auto;                  
+            border: 3px solid whitesmoke;
+        }
+        #score, #highscore {                       
+            font-family: sans-serif;
+            font-size: 1.5em;              
+            text-align: center;
+            color: whitesmoke;
+        }
+     
+    </style>
+    <body>
+        <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+            <div id=score></div>                              
+            <canvas id="tetris"></canvas>               
+            <div id=highscore></div>           
+            <script src="tetris.js"></script>
+             
+        
+    </body>
+</html>
